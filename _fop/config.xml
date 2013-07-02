@@ -1,0 +1,24 @@
+<fop version="1.0">
+
+  <!-- Strict user configuration -->
+  <!-- strict-configuration>true</strict-configuration -->
+
+  <!-- Strict FO validation -->
+  <!-- strict-validation>true</strict-validation -->
+
+  <!-- Font Base URL for resolving relative font URLs -->
+  <font-base>./</font-base>
+
+  <use-cache>true</use-cache>
+  <cache-file>/Users/phillipoldham/.fop/fop.cache</cache-file>
+
+  <renderers>
+    <renderer mime="application/pdf">
+      <fonts>
+        <directory>/Users/phillipoldham/.fop/fonts/</directory>
+        <!-- auto-detect/ -->
+      </fonts>
+    </renderer>
+  </renderers>
+
+</fop>

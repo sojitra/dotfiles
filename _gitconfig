@@ -1,0 +1,41 @@
+[core]
+	editor = emacs
+	excludesfile = /Users/phillipoldham/.gitignore_global
+
+[user]
+	name = Phillip Oldham
+	email = phillip.oldham@gmail.com
+
+[color]
+	ui = true
+
+[alias]
+    st = status -sb
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    ready = rebase -i @{u}
+    purr = pull --rebase
+    ignored = ls-files --others -i --exclude-standard
+    wipe = reset --hard HEAD
+
+    # merging
+    ours = "!f() { git co --ours $@ && git add $@; }; f"
+    theirs = "!f() { git co --theirs $@ && git add $@; }; f"
+
+    # log viewing
+    lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    hist = log --pretty=format:'%Cred%h%Creset %C(green)%ad%Creset | %s %C(yellow)%d%Creset %C(blue)[%an]%Creset' --graph --date=short
+    #standup = "!git log --since yesterday --author `git config user.email` --pretty=short"
+    standup = "!git log --since yesterday --author `git config user.email` --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset'"
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

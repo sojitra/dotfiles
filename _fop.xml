@@ -1,0 +1,20 @@
+<fop version="1.0">
+
+  <!-- Strict user configuration -->
+  <strict-configuration>true</strict-configuration>
+
+  <!-- Strict FO validation -->
+  <strict-validation>true</strict-validation>
+
+  <!-- Font Base URL for resolving relative font URLs -->
+  <font-base>./</font-base>
+
+  <renderers>
+    <renderer mime="application/pdf">
+      <fonts>
+        <directory>~/.fop/fonts/</directory>
+      </fonts>
+    </renderer>
+  </renderers>
+
+</fop>
