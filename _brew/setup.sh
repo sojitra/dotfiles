@@ -123,10 +123,8 @@ function installcask() {
 installcask adium
 installcask alfred
 installcask bartender
-installcask caffeine
 installcask calibre
 installcask coconutbattery
-installcask cornerstone
 installcask cyberduck
 installcask daisy-disk
 installcask dropbox
@@ -152,6 +150,8 @@ installcask tomahawk
 installcask transmission
 installcask virtualbox
 installcask vlc
+
+brew cask linkapps
 
 # Remove outdated versions from the cellar
 brew cleanup
