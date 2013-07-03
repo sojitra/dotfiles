@@ -129,15 +129,16 @@ installcask cyberduck
 installcask daisy-disk
 installcask dropbox
 installcask google-chrome
-installcask google-chrome-canary
 installcask handbrake
 installcask handbrakebatch
 installcask imagealpha
 installcask imageoptim
+installcask jumpcut
 installcask istat-menus
 installcask iterm2
 installcask libre-office
 installcask miro-video-converter
+installcask mou
 installcask renamer
 installcask ripit
 installcask satellite-eyes
@@ -145,13 +146,9 @@ installcask shortcat
 installcask spotify
 installcask sublime-text
 installcask textual
-installcask the-unarchiver
 installcask tomahawk
 installcask transmission
-installcask virtualbox
 installcask vlc
-
-brew cask linkapps
 
 # Remove outdated versions from the cellar
 brew cleanup
